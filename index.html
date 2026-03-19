@@ -1,13 +1,79 @@
-<html>
+<!doctype html>
+<html lang="fr">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X8QJHLT5Q9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-<body>
-  <h1>YOUR NAME</h1>
-  <p>Welcome to my website test!</p>
-  <figure>
-    <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-    <figcaption>A corn ice cream gif!</figcaption>
-  </figure>
-  
-</body>
+      gtag('config', 'G-X8QJHLT5Q9');
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NT28SLPH');</script>
+  <!-- End Google Tag Manager -->
+    <meta charset="URT-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alberto's Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NT28SLPH"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+    <header>
+      <!-- <div class="logo">
+        <a href="#">AE</a>
+      </div>
+    </header> -->
+    <main>
+      <section id="hero" class="fade-in-hidden">
+        <h1>Alberto</h1>
+        <h2>Python Dev. & aspiring ML eng.</h2>
+        <p>
+          Ce site est en construction. En attendant, profitez de ce GIF de
+          <strong class="happy-ice-cream">corn ice cream </strong>qui danse.
+        </p>
+        <a href="https://github.com/aemetil/aemetil.github.io" class="button"
+          >Enter the GitHub zone</a
+        >
+      </section>
+      <section class="corn-section">
+        <img
+          src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif"
+          alt="A corn ice cream gif"
+        />
+        <p id="joke"></p>
+      </section>
+      <section id="contact">
+        <h2>Get In Touch</h2>
+        <p>
+          Si vous avez réussi à arriver jusqu’ici et que vous voulez quand même
+          me contacter, envoyez-moi un message. Je promets de répondre plus vite
+          que ce portfolio n’a été développé.
+        </p>
+        <a href="mailto:e.aemetil@gmail.com" class="button">Say Hello</a>
+      </section>
+    </main>
 
+    <footer>
+      <div class="footer-wrapper">
+        <div class="footer-line"></div>
+        <!-- counter zone display -->
+        <!-- <p>Nb de visiteurs : <span id="counter">loading...</span></p> -->
+      <p>Design & built by a.emetil</p>
+      <p>
+        Copyright © <span id="year"></span> - Développé en HTML, CSS, JS & bcp
+        de volonté.
+      </p>
+    </div>
+    </footer>
+  </body>
+  <script src="./js/script.js"></script>
 </html>
