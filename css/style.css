@@ -2,48 +2,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
 /* CSS Variables 4 colors & fonts */
-/* DISCLAIMER: 
- Non, je n'en ai pas use autant de couleurs sur ce portfolio.
- En cherchant des couleurs sympas, j'ai fini par énumérer
- toutes les couleurs que je pourrais apprécier ou use one day.
-   - Donc c'est ma liste de couleurs pour qd j'en aurai besoin.
-   - Plus besoin de chercher.
-   - Alors te gêne pas, surtout sers-toi 😊!
-*/
 :root {
-  --dark-navy: #0a192f;
-  /* Violets très sombres */
-  --dark-night-purple: #120026; /* violet nuit */
-  --deep-purple: #0d001a; /* violet profond */
-  --midnight-purple: #100033; /* violet très sombre tirant vers bleu */
-  --indigo-deep: #0b0026; /* indigo profond */
-  --cosmic-violet: #0d001f; /* presque noir, violet/bleu */
-  --dark-indigo: #110022; /* bleu-violet très profond */
-  --twilight-violet: #130031; /* violet nocturne tirant vers bleu */
+ /* couleurs princiales*/
+ --black: #000000;
+ --white: #ffffff;
 
-  /* Orange très vif et énergique */
-  --vibrant-orange: #ff7605;
-  --sunset-orange: #ff7605; /* Comme le ciel au coucher du soleil */
-  --burnt-orange: #ff7605; /* Un peu chaud et profond, mais encore vif */
-  --tiger-orange: #ff7605; /* Inspiré du pelage du tigre */
-  --flame-orange: #ff7605; /* Dynamique, presque feu */
-  --navy: #112240;
-  --light-navy: #233554;
-  --slate: #8892b0;
-  --light-slate: #a8b2d1;
-  --lightest-slate: #ccd6f6;
-  --white: #e6f1ff;
-  --green: #64ffda;
-  --font-sans: "Inter", sans-serif;
+ /* nuances de gris */
+ --light-gray: #d8d8d8;
+ --medium-gray: #868686;
+ --gray: #535353;
+ --dark-gray: #3535353;
+ --night-gray: #1f1f1f;
 }
+
 
 /*Global Styles */
 html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: var(--navy);
-  color: var(--slate);
+  background-color: var(--white);
+  color: var(--black);
   font-family: var(--font-sans);
   line-height: 1.6;
   font-size: 15px;
@@ -62,15 +41,16 @@ section {
   max-width: 900px;
   margin: 0 auto;
 }
-h1,
-h2 {
-  color: var(--lightest-slate);
+
+h1, h2 {
+  
   font-weight: 600;
   margin: 0 0 20px;
 }
 
 h1 {
   font-size: clamp(40px, 8vw, 80px);
+  color: var(--black);
 }
 
 h2 {
@@ -89,7 +69,7 @@ h2::after {
   width: 300px;
   height: 1px;
   margin-left: 20px;
-  background-color: var(--light-navy);
+  background-color: var(--light-gray);
 }
 p {
   font-size: clamp(14px, 1.2vw, 18px);
@@ -98,18 +78,18 @@ p {
 }
 
 a {
-  color: var(--vibrant-orange);
+  color: var(--black);
   text-decoration: none;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 a:hover {
-  color: var(--vibrant-orange);
-  /* text-decoration: underline; */
+  color: var(--gray);
+  /*text-decoration: underline;*/
 }
 .button {
-  color: var(--vibrant-orange);
+  color: var(--black);
   background-color: transparent;
-  border: 1px solid var(--vibrant-orange);
+  border: 1px solid var(--black);
   border-radius: 4px;
   font-size: clamp(12px, 1vw, 16px);
   padding: clamp(6px, 0.8vw, 12px) clamp(14px, 2vw, 24px);
@@ -118,7 +98,8 @@ a:hover {
 }
 
 .button:hover {
-  background-color: rgba(255, 118, 5, 0.08);
+  background-color: var(--black);
+  color: var(--white);
 }
 
 /* .logo a {
@@ -143,7 +124,7 @@ a:hover {
 
 #hero h2 {
   font-size: clamp(14px, 4vw, 24px);
-  color: var(--slate);
+  color: var(--gray);
   /* transition-delay: 0.1s; */
 }
 
@@ -214,7 +195,7 @@ footer {
 
 footer p {
   font-size: clamp(11px, 2.5vw, 12px);
-  color: var(--slate);
+  color: var(--gray);
   opacity: 0.4;
   margin: 5px 0;
   line-height: 1.4;
@@ -228,6 +209,6 @@ footer p {
 .footer-line {
   width: 100%;
   height: 1px;
-  background-color: var(--light-navy);
+  background-color: var(--light-gray);
   margin-bottom: 20px;
 }
