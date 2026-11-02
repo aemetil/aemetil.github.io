@@ -1,7 +1,7 @@
 /* Import Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
-/* CSS Variables 4 colors & fonts */
+/* CSS variables 4 colors & fonts */
 :root {
  /* couleurs princiales*/
  --black: #000000;
@@ -11,7 +11,7 @@
  --light-gray: #d8d8d8;
  --medium-gray: #868686;
  --gray: #535353;
- --dark-gray: #3535353;
+ --dark-gray: #353535;
  --night-gray: #1f1f1f;
 }
 
@@ -132,7 +132,7 @@ a:hover {
   display: none;
 }
 
-/* /* exageration de transitions pour le hero section. mdr 🤣*/
+/* /* exageration de transitions pour le hero section.*/
 /* #hero p {
   transition-delay: 0.5s;
 }
@@ -140,7 +140,7 @@ a:hover {
 #hero .button {
   transition-delay: 0.7s;
 } */
-/* end of exageration of transitions for the hero section. mdr 🤣*/ 
+/* end of exageration of transitions for the hero section.*/ 
 
 /* Contact Section */
 #contact {
