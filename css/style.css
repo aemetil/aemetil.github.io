@@ -142,7 +142,7 @@ a:hover {
 } */
 /* end of exageration of transitions for the hero section.*/ 
 
-/* Contact Section */
+/* contact Section */
 #contact {
   display: flex;
   flex-direction: column;
@@ -166,12 +166,12 @@ a:hover {
   border-radius: 5px;
 }
 
-/* Random jokes */
+/* random jokes */
 #joke {
   text-align: center;
 }
 
-/* Fade-in Animation */
+/* fade-in Animation */
 .fade-in-hidden {
   opacity: 0;
   transform: translateY(40px) scale(0.95);
@@ -188,7 +188,6 @@ a:hover {
 
 /* footer */
 footer {
-  /* border-top: 1px solid var(--dark-navy); */
   text-align: center;
   padding: 20px 0;
 }
